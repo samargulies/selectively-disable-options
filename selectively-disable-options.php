@@ -18,7 +18,6 @@ function sdo_options() {
 	);
 	
 	 return apply_filters('sdo_options', $options);
-;
 }
 
 add_action('init', 'sdo_add_option_filters', 0);
