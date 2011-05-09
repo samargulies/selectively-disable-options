@@ -2,7 +2,7 @@
 /*
 Plugin Name: Selectively Disable Options
 Plugin URI: 
-Description: Remove undesirable user settings
+Description: Remove settings that you do not want users to change
 Author: Sam Margulies
 Version: 1.0
 Author URI: 
