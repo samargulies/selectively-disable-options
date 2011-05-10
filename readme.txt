@@ -13,13 +13,13 @@ Remove settings that you do not want users to changes. Useful for Wordpress Mult
 
 As a proof-of-concept this plugin will remove the 'comment_moderation' and 'comment_registration' fields from the discussion options page. To set your own settings to remove, hook them into the `sdo_options()` function. For example, to force the week to start on Sunday and the site to be private, try:
 `
-function my_sdo_options() {
-	return array(
-		'start_of_week' => '0',
-		'blog-norobots' => '0'
-	);
+function my_disabled_options( $options ) {
+	$options['start_of_week'] = '0';
+	$options['blog-norobots'] = '0';
+	$options['comment_moderation'] = '1';
+	return $options;
 }
-add_filter('sdo_options', 'my_sdo_options');
+add_filter('selectively_disabled_options', 'my_disabled_options');
 `
 
 == Installation ==
