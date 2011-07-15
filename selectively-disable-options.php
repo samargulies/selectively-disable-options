@@ -84,9 +84,7 @@ class Selectively_Disable_Options {
 		load_plugin_textdomain('selectively_disable_options', null, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 		
 		//update disabled options with outside filters
-		$this->options['disabled_options'] =  $this->set_disabled_options();		
-		update_option( $this->option_name, $this->options );
-
+		$this->options['disabled_options'] =  $this->set_disabled_options();
 	}
 
 	/**
