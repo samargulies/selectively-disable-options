@@ -21,6 +21,7 @@ function my_disabled_options( $options ) {
 }
 add_filter('selectively_disabled_options', 'my_disabled_options');
 `
+For a list of options visit the WordPress (options reference)[http://codex.wordpress.org/Option_Reference].
 
 == Installation ==
 
